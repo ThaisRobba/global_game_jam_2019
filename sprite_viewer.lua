@@ -1,7 +1,8 @@
 window =
     am.window {
     width = 920,
-    height = 920
+    height = 920,
+    title = "Sprite Viewer"
 }
 
 local touch_area = require "components.touch_area"
