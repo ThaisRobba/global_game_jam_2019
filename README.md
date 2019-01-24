@@ -63,6 +63,8 @@ Como todas as imagens devem ser .png, num precisa colocar a extensão, a engine 
 
 ### Visualizador
 
+![](docs/sprite_viewer.png)
+
 **Windows**
 
 Basta clicar duas vezes no arquivo "sprite_viewer.lua" e clicar o botão da animação que você quer rodar :-)
