@@ -36,6 +36,12 @@ Será necessário abrir as "Preferências" e selecionar a área de "Segurança &
 
 ![](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftrendblog.net%2Fwp-content%2Fuploads%2F2015%2F03%2FScreenshot-2015-03-11-21.11.17.png&f=1)
 
+## Editor de Texto
+
+Pra poder editar arquivos .json e afins eu recomendo muito que todos tenham o VSCode - é gratuito, bem pequenino e ele avisa de quaisquer erros de sintáxe, poupando um bom tempo! :-)
+
+Download pode ser feito na [página oficial](https://code.visualstudio.com/Download)
+
 ## Sprites
 
 Todos os arquivos de imagem devem ser em formato .png, colocados numa pastinha com o nome que fizer sentido pro sprite.
