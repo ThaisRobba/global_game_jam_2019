@@ -63,7 +63,7 @@ Como todas as imagens devem ser .png, num precisa colocar a extensão, a engine 
 
 ### Visualizador
 
-![](/global_game_jam_2019/docs/sprite_viewer.png)
+![Sprite viewer screenshot](https://raw.githubusercontent.com/ThaisRobba/global_game_jam_2019/master/docs/sprite_viwer.png)
 
 **Windows**
 
