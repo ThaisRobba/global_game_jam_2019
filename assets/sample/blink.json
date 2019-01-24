@@ -1,0 +1,13 @@
+{
+  "loop": false,
+  "frames": [
+    {
+      "source": "hero_1",
+      "time": 0.2
+    },
+    {
+      "source": "hero_2",
+      "time": 0.5
+    }
+  ]
+}

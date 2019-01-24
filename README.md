@@ -36,23 +36,43 @@ Será necessário abrir as "Preferências" e selecionar a área de "Segurança &
 
 ![](https://proxy.duckduckgo.com/iu/?u=https%3A%2F%2Ftrendblog.net%2Fwp-content%2Fuploads%2F2015%2F03%2FScreenshot-2015-03-11-21.11.17.png&f=1)
 
-## Configurando sprites
+## Sprites
 
-Todos os arquivos de imagem devem ser em formato .png
+Todos os arquivos de imagem devem ser em formato .png, colocados numa pastinha com o nome que fizer sentido pro sprite.
 
-Para testar animações e configurar o tempo dos frames, crie um arquivo .json com o nome da sua animação, conforme o exemplo "sample.json" disponível nessa mesma pasta ou o exemplo abaixo:
+Eu deixei um exemplinho na pasta `assets/sample` :-)
 
-    [
+Para testar animações e configurar o tempo dos frames, crie um arquivo .json com o nome da sua animação, conforme o exemplo `assets/sample/blink.json` disponível nessa mesma pasta ou conforme o exemplo abaixo:
+
+    {
+        "loop": false,
+        "frames": [
         {
-            "source": "nome_do_arquivo"_1",
+            "source": "nome_do_arquivo_1",
             "time": 0.5
         },
         {
-            "source": "nome_do_arquivo"_2",
+            "source": "nome_do_arquivo_2",
             "time": 0.2
         }
-    ]
+        ]
+    }
 
-Daí basta clicar duas vezes no arquivo "animated_sprite.lua" e clicar o botão da animação que você quer rodar :-)
+Como todas as imagens devem ser .png, num precisa colocar a extensão, a engine sabe completar sozinha :-)
+`
 
-Se quiser recarregar, pode apertar F5 ou fechar e abrir novamente o arquivo.
+### Visualizador
+
+**Windows**
+
+Basta clicar duas vezes no arquivo "sprite_viewer.lua" e clicar o botão da animação que você quer rodar :-)
+
+**Mac**
+
+No caso de Mac é necessário executá-lo com linha de comando:
+
+    amulet sprite_viewer.lua
+
+**Visualizando modificações**
+
+Se quiser recarregar para ver modificações de timing e afins basta apertar F5 e selecionar a animação.
