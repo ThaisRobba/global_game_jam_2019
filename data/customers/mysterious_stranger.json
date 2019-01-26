@@ -3,24 +3,33 @@
     "introduction": "Hi there!",
     "story": [
         {
-            "tags": [
-                "sad",
-                "happy"
-            ],
+            "tags": {
+                "sad": true,
+                "happy": true,
+                "love": false,
+                "anger": false,
+                "fear": false
+            },
             "phrase": "I used to collect dandelions by the train tracks"
         },
         {
-            "tags": [
-                "sad",
-                "happy"
-            ],
+            "tags": {
+                "sad": true,
+                "happy": true,
+                "love": false,
+                "anger": false,
+                "fear": false
+            },
             "phrase": "She told me that their flying seeds were like gifts for the morrow"
         },
         {
-            "tags": [
-                "sad",
-                "happy"
-            ],
+            "tags": {
+                "sad": true,
+                "happy": true,
+                "love": false,
+                "anger": false,
+                "fear": false
+            },
             "phrase": "But what gift is a tomorrow without her?"
         }
     ]
