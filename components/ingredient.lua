@@ -18,25 +18,18 @@ local function ingredient(id, offset)
     local input_area = touch_area(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2)
     input_area.released = function()
         if table.search(state.current.selected_tags, id) then
+            -- play negative animation
             log("already added!")
         else
+            -- play positive animation
             log("Added %d", id)
             state:dispatch("select_tag", id)
         end
     end
 
     node:append(input_area)
-
     node:append(am.rect(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2))
 
-    -------
-
-    -- sprite asset
-    -- touch_area
-    -- on_release...
-    --      check if ingredient is in current_ingredients
-    --      if it is, play negative animation
-    --      if it isn't, play positive animation, add ingredient to list (state change)
     return node
 end
 
