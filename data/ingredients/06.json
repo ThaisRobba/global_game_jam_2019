@@ -1,20 +1,20 @@
 {
     "sprite": "assets/ingredients/meat.png",
     "tags": {
-        "earth": true,
-        "water": true,
-        "plants": true,
-        "trees": true,
-        "bushes": true,
-        "humid": true,
+        "bushes": false,
+        "cold": false,
+        "crunchy": false,
+        "earth": false,
         "field": true,
-        "sweet": true,
-        "forest": true,
+        "forest": false,
+        "hot": false,
+        "humid": false,
+        "plants": false,
+        "nutritious": false,
         "salty": true,
-        "hot": true,
-        "cold": true,
-        "crunchy": true,
-        "slimy": true,
-        "refreshing": true
+        "slimy": false,
+        "sweet": false,
+        "trees": false,
+        "water": false
     }
 }
