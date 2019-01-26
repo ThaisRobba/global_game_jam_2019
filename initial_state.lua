@@ -4,5 +4,5 @@
 return {
     selected_tags = {},
     current_customer = {},
-    current_step = 0
+    current_step = 1
 }
