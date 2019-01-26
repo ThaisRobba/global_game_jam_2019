@@ -1,11 +1,10 @@
 local function speech_bubble(str)
     local node =
-        am.translate(-150, 200) ^
         am.scale(0, 0) ^
-            am.group {
-                am.rect(-300, -100, 300, 100),
-                am.text(str, vec4(0, 0, 0, 1))
-            }
+        am.group {
+            am.rect(-300, -100, 300, 100),
+            am.text(str, vec4(0, 0, 0, 1))
+        }
 
     node("scale"):action(
         am.tween(
