@@ -1,20 +1,20 @@
 {
     "sprite": "assets/ingredients/fishes.png",
     "tags": {
-        "earth": true,
-        "water": true,
-        "plants": true,
-        "trees": true,
-        "bushes": true,
-        "humid": true,
-        "field": true,
-        "sweet": true,
-        "forest": true,
-        "salty": true,
-        "hot": true,
+        "bushes": false,
         "cold": true,
-        "crunchy": true,
-        "slimy": true,
-        "refreshing": true
+        "crunchy": false,
+        "earth": false,
+        "field": false,
+        "forest": false,
+        "hot": false,
+        "humid": false,
+        "plants": false,
+        "nutritious": false,
+        "salty": true,
+        "slimy": false,
+        "sweet": false,
+        "trees": false,
+        "water": true
     }
 }
