@@ -1,20 +1,20 @@
 {
     "sprite": "assets/ingredients/worms.png",
     "tags": {
+        "bushes": false,
+        "cold": false,
+        "crunchy": false,
         "earth": true,
-        "water": true,
-        "plants": true,
-        "trees": true,
-        "bushes": true,
+        "field": false,
+        "forest": false,
+        "hot": false,
         "humid": true,
-        "field": true,
-        "sweet": true,
-        "forest": true,
-        "salty": true,
-        "hot": true,
-        "cold": true,
-        "crunchy": true,
+        "plants": false,
+        "nutritious": false,
+        "salty": false,
         "slimy": true,
-        "refreshing": true
+        "sweet": false,
+        "trees": false,
+        "water": false
     }
 }
