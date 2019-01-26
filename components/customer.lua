@@ -13,8 +13,8 @@ local function customer(customer_name)
         am.series {
             am.tween(0.5, {y = -20}, am.ease.quadratic),
             am.tween(0.5, {y = 0}, am.ease.quadratic),
-            am.tween(0.5, {y = -20}, am.ease.quadratic),
-            am.tween(0.5, {y = 0}, am.ease.quadratic)
+            am.tween(0.5, {y = -15}, am.ease.quadratic),
+            am.tween(0.2, {y = 0}, am.ease.quadratic)
         }
     )
 
