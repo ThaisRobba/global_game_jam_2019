@@ -23,7 +23,7 @@ local function restaurant()
         -- touch_blocker()
     }
 
-    node("character_area"):append(customer("mysterious_stranger")) --this wouldn't be hardcoded for multi customers
+    node("character_area"):append(customer("mister_pig")) --this wouldn't be hardcoded for multi customers
 
     local current_step = state.current.current_step
 
