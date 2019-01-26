@@ -1,0 +1,27 @@
+{
+    "sprite": "assets/customers/mysterious_stranger.png",
+    "introduction": "Hi there!",
+    "story": [
+        {
+            "tags": [
+                "sad",
+                "happy"
+            ],
+            "phrase": "I used to collect dandelions by the train tracks"
+        },
+        {
+            "tags": [
+                "sad",
+                "happy"
+            ],
+            "phrase": "She told me that their flying seeds were like gifts for the morrow"
+        },
+        {
+            "tags": [
+                "sad",
+                "happy"
+            ],
+            "phrase": "But what gift is a tomorrow without her?"
+        }
+    ]
+}
