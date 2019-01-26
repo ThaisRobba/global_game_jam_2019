@@ -1,14 +1,10 @@
 local ingredient = require "components.ingredient"
 
 local item_grid_offset = vec2(-430, -150)
---[[
-    second row has different offset
-    local second_row_offset = vec2(-430, -150)
-]]
 local function restaurant()
     local node =
         am.group {
-        am.scale(1) ^ am.sprite("assets/restaurant/background.jpeg"),
+        am.sprite("assets/restaurant/background.jpeg"),
         am.translate(item_grid_offset):tag("ingredients_area")
     }
 

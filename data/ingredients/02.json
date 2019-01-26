@@ -1,0 +1,10 @@
+{
+    "sprite": "assets/ingredients/bugs.png",
+    "tags": {
+        "sad": true,
+        "happy": true,
+        "love": false,
+        "anger": false,
+        "fear": false
+    }
+}

@@ -1,17 +1,28 @@
 local touch_area = require "components.touch_area"
+local state = require "state"
 
 local function ingredient(id, offset)
     local node = am.translate(offset.x, offset.y)
 
     -------
 
-    local sprite_source = string.format("assets/ingredients/%02.0f.png", id)
-    local sprite = am.sprite(sprite_source)
+    local filepath = string.format("data/ingredients/%02.0f.json", id)
+    local file = am.load_string(filepath)
+    local config = am.parse_json(file)
+
+    -------
+
+    local sprite = am.sprite(config.sprite)
     node:append(sprite)
 
     local input_area = touch_area(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2)
     input_area.released = function()
-        print("I was clicked!", id)
+        if table.search(state.current.selected_tags, id) then
+            log("already added!")
+        else
+            log("Added %d", id)
+            state:dispatch("select_tag", id)
+        end
     end
 
     node:append(input_area)
