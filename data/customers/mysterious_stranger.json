@@ -4,31 +4,61 @@
     "story": [
         {
             "tags": {
-                "sad": true,
-                "happy": true,
-                "love": false,
-                "anger": false,
-                "fear": false
+                "earth": true,
+                "water": true,
+                "plants": true,
+                "trees": true,
+                "bushes": true,
+                "humid": true,
+                "field": true,
+                "sweet": true,
+                "forest": true,
+                "salty": true,
+                "hot": true,
+                "cold": true,
+                "crunchy": true,
+                "slimy": true,
+                "refreshing": true
             },
             "phrase": "I used to collect dandelions by the train tracks"
         },
         {
             "tags": {
-                "sad": true,
-                "happy": true,
-                "love": false,
-                "anger": false,
-                "fear": false
+                "earth": true,
+                "water": true,
+                "plants": true,
+                "trees": true,
+                "bushes": true,
+                "humid": true,
+                "field": true,
+                "sweet": true,
+                "forest": true,
+                "salty": true,
+                "hot": true,
+                "cold": true,
+                "crunchy": true,
+                "slimy": true,
+                "refreshing": true
             },
             "phrase": "She told me that their flying seeds were like gifts for the morrow"
         },
         {
             "tags": {
-                "sad": true,
-                "happy": true,
-                "love": false,
-                "anger": false,
-                "fear": false
+                "earth": true,
+                "water": true,
+                "plants": true,
+                "trees": true,
+                "bushes": true,
+                "humid": true,
+                "field": true,
+                "sweet": true,
+                "forest": true,
+                "salty": true,
+                "hot": true,
+                "cold": true,
+                "crunchy": true,
+                "slimy": true,
+                "refreshing": true
             },
             "phrase": "But what gift is a tomorrow without her?"
         }

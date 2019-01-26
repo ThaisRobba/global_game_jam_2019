@@ -1,10 +1,20 @@
 {
     "sprite": "assets/ingredients/meat.png",
     "tags": {
-        "sad": true,
-        "happy": true,
-        "love": false,
-        "anger": false,
-        "fear": false
+        "earth": true,
+        "water": true,
+        "plants": true,
+        "trees": true,
+        "bushes": true,
+        "humid": true,
+        "field": true,
+        "sweet": true,
+        "forest": true,
+        "salty": true,
+        "hot": true,
+        "cold": true,
+        "crunchy": true,
+        "slimy": true,
+        "refreshing": true
     }
 }
