@@ -9,7 +9,7 @@
         "forest": true,
         "hot": false,
         "humid": false,
-        "plants": false,
+        "plants": true,
         "nutritious": true,
         "salty": false,
         "slimy": false,
