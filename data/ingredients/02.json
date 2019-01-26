@@ -1,20 +1,20 @@
 {
     "sprite": "assets/ingredients/bugs.png",
     "tags": {
-        "earth": true,
-        "water": true,
-        "plants": true,
-        "trees": true,
-        "bushes": true,
-        "humid": true,
-        "field": true,
-        "sweet": true,
-        "forest": true,
-        "salty": true,
-        "hot": true,
-        "cold": true,
+        "bushes": false,
+        "cold": false,
         "crunchy": true,
-        "slimy": true,
-        "refreshing": true
+        "earth": true,
+        "field": false,
+        "forest": false,
+        "hot": false,
+        "humid": false,
+        "plants": true,
+        "nutritious": false,
+        "salty": false,
+        "slimy": false,
+        "sweet": false,
+        "trees": false,
+        "water": false
     }
 }
