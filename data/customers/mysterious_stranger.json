@@ -1,6 +1,5 @@
 {
     "sprite": "assets/customers/mysterious_stranger.png",
-    "introduction": "Hi there!",
     "story": [
         {
             "tags": {
@@ -20,7 +19,8 @@
                 "slimy": true,
                 "refreshing": true
             },
-            "phrase": "I used to collect dandelions by the train tracks"
+            "hint": "I like turtles",
+            "answer": "I used to collect dandelions by the train tracks"
         },
         {
             "tags": {
@@ -40,7 +40,8 @@
                 "slimy": true,
                 "refreshing": true
             },
-            "phrase": "She told me that their flying seeds were like gifts for the morrow"
+            "hint": "I really like turtles",
+            "answer": "She told me that their flying seeds were like gifts for the morrow"
         },
         {
             "tags": {
@@ -60,7 +61,8 @@
                 "slimy": true,
                 "refreshing": true
             },
-            "phrase": "But what gift is a tomorrow without her?"
+            "hint": "I really really like turtles",
+            "answer": "But what gift is a tomorrow without her?"
         }
     ]
 }
