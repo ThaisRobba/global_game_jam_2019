@@ -3,66 +3,66 @@
     "story": [
         {
             "tags": {
-                "earth": true,
-                "water": true,
+                "bushes": false,
+                "cold": false,
+                "crunchy": false,
+                "earth": false,
+                "field": false,
+                "forest": false,
+                "hot": false,
+                "humid": false,
                 "plants": true,
+                "nutritious": true,
+                "salty": false,
+                "slimy": false,
+                "sweet": false,
                 "trees": true,
-                "bushes": true,
-                "humid": true,
-                "field": true,
-                "sweet": true,
-                "forest": true,
-                "salty": true,
-                "hot": true,
-                "cold": true,
-                "crunchy": true,
-                "slimy": true,
-                "refreshing": true
+                "water": true
             },
-            "hint": "I like turtles",
-            "answer": "I used to collect dandelions by the train tracks"
+            "hint": "Ooink morning! Can you serve me a light and nutricious oink? I'm on a diet.",
+            "answer": "Ooooink! It was delicious! You cook as well as my son… Actually… Oink… "
         },
         {
             "tags": {
-                "earth": true,
-                "water": true,
-                "plants": true,
-                "trees": true,
                 "bushes": true,
-                "humid": true,
-                "field": true,
-                "sweet": true,
+                "cold": false,
+                "crunchy": false,
+                "earth": false,
+                "field": false,
                 "forest": true,
-                "salty": true,
-                "hot": true,
-                "cold": true,
-                "crunchy": true,
-                "slimy": true,
-                "refreshing": true
+                "hot": false,
+                "humid": false,
+                "plants": false,
+                "nutritious": false,
+                "salty": false,
+                "slimy": false,
+                "sweet": false,
+                "trees": true,
+                "water": false
             },
-            "hint": "I really like turtles",
-            "answer": "She told me that their flying seeds were like gifts for the morrow"
+            "hint": "She liked to do a delicious oink with some things she found on the forest we lived at...",
+            "answer": "Snif… Oink… Snif… I ended up kicking her out of the company after she changed. She was supposed to be my heir, but I didn't accept him to be her… Ooink… "
         },
         {
             "tags": {
-                "earth": true,
-                "water": true,
-                "plants": true,
-                "trees": true,
-                "bushes": true,
-                "humid": true,
-                "field": true,
-                "sweet": true,
-                "forest": true,
-                "salty": true,
-                "hot": true,
-                "cold": true,
+                "bushes": false,
+                "cold": false,
                 "crunchy": true,
-                "slimy": true,
-                "refreshing": true
+                "earth": false,
+                "field": false,
+                "forest": false,
+                "hot": false,
+                "humid": true,
+                "plants": false,
+                "nutritious": false,
+                "salty": false,
+                "slimy": false,
+                "sweet": true,
+                "trees": false,
+                "water": false
             },
-            "hint": "I really really like turtles",
-            "answer": "But what gift is a tomorrow without her?"
+            "hint": "Even after this, she would still do those desserts. I arrived really tired, but she insisted on seeing me happy. I ran a little from the diet oink-he-he-oink.",
+            "answer": "Oooink! Marvelous! Sniff… Sorry oink. I will talk to her again, I let my prejudice overcome my love for her. Her happiness in the most important thing for me. Thanks for bringing oink back to me <3."
         }
     ]
 }
