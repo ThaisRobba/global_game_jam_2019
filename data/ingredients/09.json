@@ -1,20 +1,20 @@
 {
     "sprite": "assets/ingredients/fruits.png",
     "tags": {
-        "earth": true,
-        "water": true,
-        "plants": true,
-        "trees": true,
         "bushes": true,
-        "humid": true,
-        "field": true,
+        "cold": false,
+        "crunchy": false,
+        "earth": false,
+        "field": false,
+        "forest": false,
+        "hot": false,
+        "humid": false,
+        "plants": false,
+        "nutritious": true,
+        "salty": false,
+        "slimy": false,
         "sweet": true,
-        "forest": true,
-        "salty": true,
-        "hot": true,
-        "cold": true,
-        "crunchy": true,
-        "slimy": true,
-        "refreshing": true
+        "trees": false,
+        "water": false
     }
 }
