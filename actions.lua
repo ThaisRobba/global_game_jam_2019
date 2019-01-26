@@ -18,7 +18,7 @@ return {
     select_tag = function(state, payload)
         local selected_tags = state.selected_tags
 
-        table.insert(selected_tags, payload)
+        selected_tags[payload] = true
 
         local current_customer, customer_tags
         if #selected_tags >= 2 then
