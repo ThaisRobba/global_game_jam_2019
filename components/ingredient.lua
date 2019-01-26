@@ -28,7 +28,6 @@ local function ingredient(id, offset)
     end
 
     node:append(input_area)
-    node:append(am.rect(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2))
 
     return node
 end

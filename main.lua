@@ -6,8 +6,8 @@ local screen = require "components.screen"
 
 window =
     am.window {
-    width = 1280,
-    height = 720
+    width = 1920,
+    height = 1080
 }
 
 window.scene =

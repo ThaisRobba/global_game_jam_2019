@@ -2,9 +2,10 @@ local state = require "state"
 
 ------
 
-local ingredient = require "components.ingredient"
+local food_counter = require "components.food_counter"
 local customer = require "components.customer"
 local speech_bubble = require "components.speech_bubble"
+local touch_blocker = require "components.touch_blocker"
 
 ------
 
@@ -15,26 +16,12 @@ local speech_bubble_offset = vec2(-150, 200)
 local function restaurant()
     local node =
         am.group {
-        am.sprite("assets/restaurant/background.jpeg"):tag("background"),
+        am.translate(0, 280) ^ am.sprite("assets/restaurant/background.png"):tag("background"),
         am.translate(customer_offset):tag("character_area"),
-        am.translate(item_grid_offset):tag("ingredients_area"),
+        am.translate(item_grid_offset) ^ food_counter(),
         am.translate(speech_bubble_offset):tag("speech_bubble_area")
+        -- touch_blocker()
     }
-
-    for i = 1, 10 do
-        local row = i > 5 and 2 or 1
-        local y_offset = (row - 1) * -125
-        local x_offset = (row - 1) * -32
-        local x_offset_multiplier = 146
-
-        if i > 5 then
-            x_offset = x_offset + (i - 6) * (x_offset_multiplier + 10)
-        else
-            x_offset = x_offset + (i - 1) * x_offset_multiplier
-        end
-
-        node("ingredients_area"):append(ingredient(i, vec2(x_offset, y_offset)))
-    end
 
     node("character_area"):append(customer("mysterious_stranger")) --this wouldn't be hardcoded for multi customers
 
@@ -47,6 +34,10 @@ local function restaurant()
             if state.current.current_step ~= current_step then
                 current_step = state.current.current_step
             -- we want to trigger the answer speech bubble and queue the other speech bubble
+            -- How should we go about this?
+            -- speech_bubble with caret
+            -- on click, close, open new speech_bubble without caret
+            -- speech_bubble with
             end
         end
     )
