@@ -58,8 +58,14 @@ local function restaurant()
         node,
         function()
             current_step = state.current.current_step
-            spawn_speech_bubble(node)
-            node("touch_blocker").allow_propagation = true
+            if current_step <= 6 then
+                spawn_speech_bubble(node)
+                node("touch_blocker").allow_propagation = true
+            else
+                node("touch_blocker").allow_propagation = false
+                node:append(am.rect(window.left, window.bottom, window.right, window.top, vec4(0, 0, 0, 0.5)))
+                node:append(am.sprite("assets/ui/credits.png"))
+            end
         end
     )
 

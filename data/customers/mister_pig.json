@@ -56,7 +56,7 @@
                 "field": false,
                 "forest": false,
                 "hot": false,
-                "humid": true,
+                "humid": false,
                 "plants": false,
                 "nutritious": false,
                 "salty": false,

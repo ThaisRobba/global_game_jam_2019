@@ -44,7 +44,6 @@ return {
         if #selected_ingredients >= 2 then
             current_customer = state.current_customer
             customer_tags = current_customer.story[state.current_step].tags
-
             local tags = get_tags_from_ingredients(selected_ingredients)
 
             if customer_tags and target_tags_are_satisfied(customer_tags, tags) then
