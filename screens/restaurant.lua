@@ -24,7 +24,6 @@ local function spawn_speech_bubble(node)
             clickable_speech_bubble(
                 get_step_dialog(current_step),
                 function()
-                    log("hello bubble")
                     state:dispatch("next_step")
                 end
             )

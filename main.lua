@@ -15,4 +15,6 @@ window.scene =
     screen("screens.restaurant")
 }
 
+window.scene:action("bgm", am.play("assets/sounds/trixie.ogg", true))
+
 state:mount(window.scene, actions, initial_state)

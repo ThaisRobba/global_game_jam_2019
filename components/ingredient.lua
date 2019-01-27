@@ -18,13 +18,10 @@ local function ingredient(id, offset)
     local input_area = touch_area(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2)
 
     input_area.released = function()
-        log(table.tostring(state.current.selected_ingredients))
         if table.search(state.current.selected_ingredients, id) then
-            -- play negative animation
-            log("already added!")
+            -- TODO: play negative animation
         else
-            -- play positive animation
-            log("Added %d", id)
+            -- TODO: play positive animation
             state:dispatch("select_ingredient", id)
         end
     end

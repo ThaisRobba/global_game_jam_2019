@@ -2,7 +2,7 @@
     "sprite": "assets/customers/mister_pig.png",
     "story": [
         {
-            "str": "Ooink morning! Can you serve me a light and nutricious oink? I'm on a diet.",
+            "str": "Ooink morning!\nCan you serve me a light and\nnutricious oink? I'm on a diet.",
             "tags": {
                 "bushes": false,
                 "cold": false,
