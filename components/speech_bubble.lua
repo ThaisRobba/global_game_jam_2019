@@ -2,8 +2,8 @@ local function speech_bubble(str)
     local node =
         am.scale(0, 0) ^
         am.group {
-            am.rect(-500, -150, 500, 150),
-            am.text(str, vec4(0, 0, 0, 1))
+            am.sprite("assets/ui/speech_bubble.png"),
+            am.scale(3, 3) ^ am.text(str, vec4(1, 1, 1, 1))
         }
 
     node("scale"):action(

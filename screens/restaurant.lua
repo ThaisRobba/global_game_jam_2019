@@ -37,7 +37,7 @@ end
 ------
 
 local item_grid_offset = vec2(-430, -150)
-local customer_offset = vec2(500, 160)
+local customer_offset = vec2(500, 250)
 local speech_bubble_offset = vec2(-325, 300)
 
 local function restaurant()
