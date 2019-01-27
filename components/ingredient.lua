@@ -22,11 +22,13 @@ local function ingredient(id, offset)
             -- TODO: play negative animation
         else
             -- TODO: play positive animation
+            node.hidden = true
             state:dispatch("select_ingredient", id)
         end
     end
 
     node:append(input_area)
+    node:tag("ingredient")
 
     return node
 end

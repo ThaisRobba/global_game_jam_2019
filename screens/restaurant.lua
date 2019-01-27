@@ -28,8 +28,35 @@ local function spawn_speech_bubble(node)
                 end
             )
         )
+        node("touch_blocker").allow_propagation = true
+    elseif current_step == 7 then
+        node("touch_blocker").allow_propagation = false
+        local credits =
+            am.group {
+            am.rect(window.left, window.bottom, window.right, window.top, vec4(0, 0, 0, 0.5)),
+            am.sprite("assets/ui/credits.png", vec4(1, 1, 1, 0))
+        }
+
+        node:append(credits)
+        credits("rect"):action(
+            am.tween(
+                1,
+                {
+                    color = vec4(0, 0, 0, 1)
+                }
+            )
+        )
+        credits("sprite"):action(
+            am.tween(
+                1,
+                {
+                    color = vec4(1, 1, 1, 1)
+                }
+            )
+        )
     else
         node("speech_bubble_area"):append(speech_bubble(get_step_dialog(current_step)))
+        node("touch_blocker").allow_propagation = true
     end
 end
 
@@ -59,35 +86,7 @@ local function restaurant()
         function()
             current_step = state.current.current_step
 
-            if current_step <= 6 then
-                spawn_speech_bubble(node)
-                node("touch_blocker").allow_propagation = true
-            else
-                node("touch_blocker").allow_propagation = false
-                local credits =
-                    am.group {
-                    am.rect(window.left, window.bottom, window.right, window.top, vec4(0, 0, 0, 0.5)),
-                    am.sprite("assets/ui/credits.png", vec4(1, 1, 1, 0))
-                }
-
-                node:append(credits)
-                credits("rect"):action(
-                    am.tween(
-                        1,
-                        {
-                            color = vec4(0, 0, 0, 1)
-                        }
-                    )
-                )
-                credits("sprite"):action(
-                    am.tween(
-                        1,
-                        {
-                            color = vec4(1, 1, 1, 1)
-                        }
-                    )
-                )
-            end
+            spawn_speech_bubble(node)
         end
     )
 
@@ -98,6 +97,12 @@ local function restaurant()
             if state.current.current_step ~= current_step then
                 current_step = state.current.current_step
                 spawn_speech_bubble(node)
+            end
+
+            if #state.current.selected_ingredients == 0 then
+                for _, child in pairs(node:all("ingredient")) do
+                    child.hidden = false
+                end
             end
         end
     )
