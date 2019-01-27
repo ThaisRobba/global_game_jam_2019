@@ -4,6 +4,7 @@ local state = require "state"
 
 local food_counter = require "components.food_counter"
 local customer = require "components.customer"
+local grub = require "components.grub"
 local speech_bubble = require "components.speech_bubble"
 local clickable_speech_bubble = require "components.clickable_speech_bubble"
 local touch_blocker = require "components.touch_blocker"
@@ -73,7 +74,8 @@ local function restaurant()
         am.translate(customer_offset):tag("character_area"),
         am.translate(item_grid_offset) ^ food_counter(),
         am.translate(speech_bubble_offset):tag("speech_bubble_area"),
-        touch_blocker()
+        touch_blocker(),
+        grub()
     }
 
     node("character_area"):append(customer("mister_pig")) --this wouldn't be hardcoded for multi customers
@@ -102,7 +104,10 @@ local function restaurant()
             if #state.current.selected_ingredients == 0 then
                 for _, child in pairs(node:all("ingredient")) do
                     child.hidden = false
+                    node("grub").hidden = true
                 end
+            else
+                node("grub").hidden = false
             end
         end
     )
