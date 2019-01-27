@@ -22,7 +22,7 @@
             }
         },
         {
-            "str": "Ooooink! It was delicious! You cook as well as my son… Actually… Oink… "
+            "str": "Ooooink! It was delicious!\nYou cook as well as my son...\nActually... Oink... "
         },
         {
             "tags": {
@@ -42,10 +42,10 @@
                 "trees": true,
                 "water": false
             },
-            "str": "She liked to do a delicious oink with some things she found in the forest we lived at..."
+            "str": "She liked to do a delicious\noink with some things she\nfound in the forest we lived at..."
         },
         {
-            "str": "Snif… Oink… Snif… I ended up kicking her out of the company after she changed. She was supposed to be my heir, but I didn't accept him to be her… Ooink… "
+            "str": "Snif... Oink... Snif...\nI fired her after she changed.\nShe was supposed to be my heir,\nbut I didn't accept him to be her...\nOoink..."
         },
         {
             "tags": {
@@ -65,10 +65,10 @@
                 "trees": false,
                 "water": false
             },
-            "str": "Even after this, she would still do those desserts. I arrived really tired, but she insisted on seeing me happy. I ran a little from the diet oink-he-he-oink."
+            "str": "Even after this,\nshe would still do those desserts.\nI arrived really tired, but she insisted on seeing me happy.\nI ran a little from the diet oink-he-he-oink."
         },
         {
-            "str": "Oooink! Marvelous! Sniff… Sorry oink. I will talk to her again, I let my prejudice overcome my love for her. Her happiness in the most important thing for me. Thanks for bringing oink back to me <3."
+            "str": "Oooink! Marvelous! Sniff...\nSorry oink. I will talk to her again,\nI let my prejudice overcome my love for her.\nHer happiness in the most important thing for me.\nThanks for bringing oink back to me <3."
         }
     ]
 }
