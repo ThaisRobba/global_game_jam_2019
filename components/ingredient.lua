@@ -16,14 +16,16 @@ local function ingredient(id, offset)
     node:append(sprite)
 
     local input_area = touch_area(-sprite.width / 2, -sprite.height / 2, sprite.width / 2, sprite.height / 2)
+
     input_area.released = function()
-        if table.search(state.current.selected_tags, id) then
+        log(table.tostring(state.current.selected_ingredients))
+        if table.search(state.current.selected_ingredients, id) then
             -- play negative animation
             log("already added!")
         else
             -- play positive animation
             log("Added %d", id)
-            state:dispatch("select_tag", id)
+            state:dispatch("select_ingredient", id)
         end
     end
 

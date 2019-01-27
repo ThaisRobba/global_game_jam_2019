@@ -28,7 +28,7 @@ local function restaurant()
     local current_step = state.current.current_step
 
     state:on(
-        "select_tag",
+        "select_ingredient",
         node,
         function()
             if state.current.current_step ~= current_step then
