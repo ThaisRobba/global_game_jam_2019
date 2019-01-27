@@ -6,7 +6,7 @@
         "crunchy": true,
         "earth": false,
         "field": false,
-        "forest": false,
+        "forest": true,
         "hot": false,
         "humid": false,
         "plants": false,
