@@ -37,8 +37,6 @@ return {
     end,
     select_ingredient = function(state, payload)
         local selected_ingredients = state.selected_ingredients
-        log("hello %s", payload)
-        log(table.tostring(selected_ingredients))
 
         table.insert(selected_ingredients, payload)
 
@@ -49,11 +47,11 @@ return {
         end
 
         local tags = get_tags_from_ingredients(selected_ingredients)
+
         if customer_tags and target_tags_are_satisfied(customer_tags, tags) then
             table.clear(selected_ingredients)
 
             state.current_step = state.current_step + 1
-            log("New step!")
         end
     end
 }

@@ -2,9 +2,7 @@
     "sprite": "assets/customers/mister_pig.png",
     "story": [
         {
-            "str": "Ooink morning! Can you serve me a light and nutricious oink? I'm on a diet."
-        },
-        {
+            "str": "Ooink morning! Can you serve me a light and nutricious oink? I'm on a diet.",
             "tags": {
                 "bushes": false,
                 "cold": false,
@@ -21,11 +19,10 @@
                 "sweet": false,
                 "trees": true,
                 "water": true
-            },
-            "str": "Ooooink! It was delicious! You cook as well as my son… Actually… Oink… "
+            }
         },
         {
-            "str": "She liked to do a delicious oink with some things she found on the forest we lived at..."
+            "str": "Ooooink! It was delicious! You cook as well as my son… Actually… Oink… "
         },
         {
             "tags": {
@@ -45,10 +42,10 @@
                 "trees": true,
                 "water": false
             },
-            "str": "Snif… Oink… Snif… I ended up kicking her out of the company after she changed. She was supposed to be my heir, but I didn't accept him to be her… Ooink… "
+            "str": "She liked to do a delicious oink with some things she found in the forest we lived at..."
         },
         {
-            "str": "Even after this, she would still do those desserts. I arrived really tired, but she insisted on seeing me happy. I ran a little from the diet oink-he-he-oink."
+            "str": "Snif… Oink… Snif… I ended up kicking her out of the company after she changed. She was supposed to be my heir, but I didn't accept him to be her… Ooink… "
         },
         {
             "tags": {
@@ -68,6 +65,9 @@
                 "trees": false,
                 "water": false
             },
+            "str": "Even after this, she would still do those desserts. I arrived really tired, but she insisted on seeing me happy. I ran a little from the diet oink-he-he-oink."
+        },
+        {
             "str": "Oooink! Marvelous! Sniff… Sorry oink. I will talk to her again, I let my prejudice overcome my love for her. Her happiness in the most important thing for me. Thanks for bringing oink back to me <3."
         }
     ]

@@ -52,12 +52,26 @@ local function restaurant()
 
     node("character_area"):append(customer("mister_pig")) --this wouldn't be hardcoded for multi customers
 
+    local current_step = state.current.current_step
+
     state:on(
         "next_step",
         node,
         function()
+            current_step = state.current.current_step
             spawn_speech_bubble(node)
             node("touch_blocker").allow_propagation = true
+        end
+    )
+
+    state:on(
+        "select_ingredient",
+        node,
+        function()
+            if state.current.current_step ~= current_step then
+                current_step = state.current.current_step
+                spawn_speech_bubble(node)
+            end
         end
     )
 
