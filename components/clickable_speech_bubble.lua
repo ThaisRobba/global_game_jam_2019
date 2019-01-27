@@ -7,6 +7,35 @@ local function clickable_speech_bubble(str, callback)
     node.allow_propagation = false
 
     node:append(speech_bubble(str))
+    node("speech_bubble"):append(am.translate(400, -100):tag("arrow") ^ am.sprite("assets/ui/arrow.png"))
+    node("arrow"):action(
+        am.series {
+            am.tween(
+                1,
+                {
+                    x = 410
+                }
+            ),
+            am.tween(
+                1,
+                {
+                    x = 400
+                }
+            ),
+            am.tween(
+                1,
+                {
+                    x = 410
+                }
+            ),
+            am.tween(
+                1,
+                {
+                    x = 400
+                }
+            )
+        }
+    )
     node:tag("speech_bubble")
 
     return node
