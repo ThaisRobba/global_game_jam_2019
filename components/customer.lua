@@ -14,7 +14,13 @@ local function customer(customer_name)
             am.tween(0.5, {y = -20}, am.ease.quadratic),
             am.tween(0.5, {y = 0}, am.ease.quadratic),
             am.tween(0.5, {y = -15}, am.ease.quadratic),
-            am.tween(0.2, {y = 0}, am.ease.quadratic)
+            am.tween(0.2, {y = 0}, am.ease.quadratic),
+            am.delay(0.3),
+            function()
+                state:dispatch("next_step")
+                log("hello")
+                return true
+            end
         }
     )
 

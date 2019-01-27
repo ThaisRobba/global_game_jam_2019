@@ -26,13 +26,19 @@ local function target_tags_are_satisfied(target, tags)
     return true
 end
 
---[[ Actions receive the current state and in some cases, a payload ]]
+-------
+
 return {
     set_customer = function(state, payload)
         state.current_customer = payload
     end,
+    next_step = function(state)
+        state.current_step = state.current_step + 1
+    end,
     select_ingredient = function(state, payload)
         local selected_ingredients = state.selected_ingredients
+        log("hello %s", payload)
+        log(table.tostring(selected_ingredients))
 
         table.insert(selected_ingredients, payload)
 
@@ -48,11 +54,6 @@ return {
 
             state.current_step = state.current_step + 1
             log("New step!")
-
-            if state.current_step > 3 then
-                -- custcene or something
-                state.day_completed = true
-            end
         end
     end
 }

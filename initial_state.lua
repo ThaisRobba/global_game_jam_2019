@@ -4,5 +4,5 @@
 return {
     selected_ingredients = {},
     current_customer = {},
-    current_step = 1
+    current_step = 0
 }

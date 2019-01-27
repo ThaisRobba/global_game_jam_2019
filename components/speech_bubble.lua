@@ -2,7 +2,7 @@ local function speech_bubble(str)
     local node =
         am.scale(0, 0) ^
         am.group {
-            am.rect(-300, -100, 300, 100),
+            am.rect(-500, -150, 500, 150),
             am.text(str, vec4(0, 0, 0, 1))
         }
 
@@ -15,6 +15,8 @@ local function speech_bubble(str)
             am.ease.elastic
         )
     )
+
+    node:tag("speech_bubble")
 
     return node
 end
