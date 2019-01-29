@@ -1,14 +1,20 @@
 local touch_area = require "components.touch_area"
 local state = require "state"
 
+local function get_ingredient_config(id)
+    local ingredients_list = am.parse_json(am.load_string("data/ingredients/index.json"))
+
+    local ingredient_name = ingredients_list[id]
+
+    return am.parse_json(am.load_string(string.format("data/ingredients/%s.json", ingredient_name)))
+end
+
 local function ingredient(id, offset)
     local node = am.translate(offset.x, offset.y)
 
     -------
 
-    local filepath = string.format("data/ingredients/%02.0f.json", id)
-    local file = am.load_string(filepath)
-    local config = am.parse_json(file)
+    local config = get_ingredient_config(id)
 
     -------
 

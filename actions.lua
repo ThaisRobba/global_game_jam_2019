@@ -1,8 +1,11 @@
 local function get_tags_from_ingredients(ids)
     local ingredient_tags = {}
 
+    local ingredients_list = am.parse_json(am.load_string("data/ingredients/index.json"))
+
     for _, id in ipairs(ids) do
-        local filepath = string.format("data/ingredients/%02.0f.json", id)
+        local name = ingredients_list[id]
+        local filepath = string.format("data/ingredients/%s.json", name)
         local file = am.load_string(filepath)
         local config = am.parse_json(file)
 
