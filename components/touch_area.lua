@@ -153,8 +153,18 @@ local function touch_area(x1, y1, x2, y2)
             return 0, 0, 0, 0
         else
             local position = self.center
+            local scale = self.scale
 
-            return position.x + x1, position.y + y1, position.x + x2, position.y + y2
+            return position.x + x1 * scale.x, position.y + y1 * scale.y, position.x + x2 * scale.x, position.y +
+                y2 * scale.y
+        end
+    end
+
+    function node:get_scale()
+        if self.value == 0 then
+            return vec2(1)
+        else
+            return vec2(self.value[1].x, self.value[2].y)
         end
     end
 
